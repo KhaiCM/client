@@ -6,8 +6,9 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    volumes:
-      - ./src:/app/src
+    # volumes:
+    #   - '.:/app'
+    #   - ./src:/app/src
     ports:
       - "7000:3000"
     restart: on-failure
